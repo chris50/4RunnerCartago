@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4Runner Cartago – Club Toyota 4×4 | Costa Rica</title>
+  <meta name="description" content="Club oficial Toyota 4Runner Cartago, Costa Rica. Paseos, aventuras 4x4 y comunidad apasionada por la marca Toyota en Cartago, Costa Rica.">
+  <meta name="keywords" content="4Runner Cartago, Toyota 4x4 Costa Rica, Club Toyota Cartago, paseos 4x4 Costa Rica, Toyota offroad">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="4Runner Cartago – Club Toyota 4×4">
+  <meta property="og:description" content="Comunidad de amantes del Toyota 4Runner en Cartago, Costa Rica. Paseos, aventuras y hermandad.">
+  <meta property="og:image" content="assets/Logo-4RunnerCoco.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/Logo-4RunnerCoco.png" type="image/png">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ LOADER ═════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <img src="assets/Logo-4RunnerCoco.png" alt="4Runner Cartago" class="loader__logo">
+      <div class="loader__bar"><div class="loader__fill" id="loaderFill"></div></div>
+      <p class="loader__text">Cargando aventura…</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#inicio" class="nav__brand">
+        <img src="assets/Logo-4RunnerCoco.png" alt="4Runner Cartago" class="nav__logo">
+        <span class="nav__brand-name">4Runner <span>Cartago</span></span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#inicio"    class="nav__link">Inicio</a></li>
+        <li><a href="#nosotros"  class="nav__link">Nosotros</a></li>
+        <li><a href="#paseos"    class="nav__link">Paseos</a></li>
+        <li><a href="#galeria"   class="nav__link">Galería</a></li>
+        <li><a href="#unete"     class="nav__link">Únete</a></li>
+        <li><a href="#contacto"  class="nav__link">Contacto</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener" class="btn btn--ig">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          Instagram
+        </a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════ HERO ══════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&q=85&fit=crop" alt="Paisaje montaña" class="hero__bg-img" id="heroBg">
+      <div class="hero__overlay"></div>
+      <div class="hero__overlay-gradient"></div>
+    </div>
+
+    <div class="hero__content container">
+      <div class="hero__eyebrow fade-up">
+        <img src="assets/Logo-4RunnerCoco.png" alt="Logo" class="hero__logo-small">
+        <span>🇨🇷 &nbsp;CARTAGO, COSTA RICA</span>
+      </div>
+      <h1 class="hero__title fade-up delay-1">
+        <span class="hero__title-toyota">TOYOTA</span>
+        <span class="hero__title-main">4RUNNER</span>
+        <span class="hero__title-sub">CARTAGO</span>
+      </h1>
+      <p class="hero__tagline fade-up delay-2">
+        Pasión por el 4×4 · Aventura sin límites · Comunidad Toyota
+      </p>
+      <div class="hero__actions fade-up delay-3">
+        <a href="#unete"  class="btn btn--primary btn--lg">Únete al Club</a>
+        <a href="#paseos" class="btn btn--outline-white btn--lg">Ver Paseos</a>
+      </div>
+    </div>
+
+    <div class="hero__stats fade-up delay-4">
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-target="80">0</span><span class="hero__stat-plus">+</span>
+        <span class="hero__stat-label">Miembros</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-target="6">0</span><span class="hero__stat-plus">+</span>
+        <span class="hero__stat-label">Paseos al año</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-target="9">0</span>
+        <span class="hero__stat-label">Años de historia</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-target="100">0</span><span class="hero__stat-plus">%</span>
+        <span class="hero__stat-label">Toyota Pura</span>
+      </div>
+    </div>
+
+    <a href="#nosotros" class="hero__scroll-btn" aria-label="Ir hacia abajo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════ ABOUT ═════════════════════════════════════ -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__content reveal">
+          <p class="eyebrow">Quiénes Somos</p>
+          <h2 class="section-heading">Más que un club,<br>somos una familia.</h2>
+          <p class="about__text">
+            Somos el grupo de entusiastas del <strong>Toyota 4Runner</strong> con base en
+            <strong>Cartago, Costa Rica</strong>. Unidos por la pasión por los terrenos difíciles,
+            la naturaleza y la legendaria confiabilidad de la marca Toyota.
+          </p>
+          <p class="about__text">
+            Organizamos paseos y aventuras 4×4 varias veces al año, explorando los paisajes más
+            increíbles de Costa Rica — desde volcanes hasta playas y caminos de lodo imposibles,
+            siempre con el espíritu de hermandad que nos caracteriza.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Toyota 4Runner</span>
+            <span class="tag">Land Cruiser</span>
+            <span class="tag">FJ Cruiser</span>
+            <span class="tag">4×4 Offroad</span>
+            <span class="tag">Costa Rica 🇨🇷</span>
+            <span class="tag">Aventura</span>
+          </div>
+          <a href="#unete" class="btn btn--primary">Ser parte del club →</a>
+        </div>
+
+        <div class="about__visual reveal delay-1">
+          <div class="about__img-grid">
+            <div class="about__img about__img--main">
+              <img src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?w=700&q=80&fit=crop" alt="Aventura 4x4 Costa Rica" loading="lazy">
+            </div>
+            <div class="about__img about__img--sm">
+              <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400&q=80&fit=crop" alt="Offroad trail" loading="lazy">
+            </div>
+            <div class="about__img about__img--sm">
+              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&q=80&fit=crop" alt="Paisaje Costa Rica" loading="lazy">
+            </div>
+          </div>
+          <div class="about__badge-float">
+            <img src="assets/Logo-4RunnerCoco.png" alt="Logo 4Runner Cartago">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ VALORES / DARK BAND ═══════════════════════════ -->
+  <section class="values">
+    <div class="container">
+      <div class="values__header reveal">
+        <p class="eyebrow eyebrow--light">Por qué Toyota</p>
+        <h2 class="section-heading section-heading--light">Los valores que nos unen</h2>
+      </div>
+      <div class="values__grid">
+
+        <div class="value-card reveal">
+          <div class="value-card__icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Confiabilidad Toyota</h3>
+          <p class="value-card__text">La marca más confiable del mundo. El 4Runner conquista cualquier terreno con la mecánica más robusta que existe.</p>
+        </div>
+
+        <div class="value-card reveal delay-1">
+          <div class="value-card__icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Paseos Todo el Año</h3>
+          <p class="value-card__text">Organizamos aventuras 4×4 múltiples veces al año, explorando cada rincón de la hermosa Costa Rica.</p>
+        </div>
+
+        <div class="value-card reveal delay-2">
+          <div class="value-card__icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Comunidad</h3>
+          <p class="value-card__text">Una familia unida por la pasión. Compartimos conocimiento, aventuras y el amor incondicional por el 4Runner.</p>
+        </div>
+
+        <div class="value-card reveal delay-3">
+          <div class="value-card__icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Aventura 4×4</h3>
+          <p class="value-card__text">Lodo, ríos, volcanes y caminos imposibles. El 4Runner está hecho exactamente para esto.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ MODELOS TOYOTA ══════════════════════════════ -->
+  <section class="modelos">
+    <div class="container">
+      <div class="modelos__header reveal">
+        <p class="eyebrow">En el Club</p>
+        <h2 class="section-heading">Nuestros Vehículos</h2>
+        <p class="modelos__subtitle">Todos los grandes 4×4 de Toyota son bienvenidos</p>
+      </div>
+      <div class="modelos__grid">
+        <div class="modelo-card reveal">
+          <div class="modelo-card__number">01</div>
+          <h3 class="modelo-card__name">4Runner</h3>
+          <p class="modelo-card__desc">El rey del club. Legendaria robustez y capacidad offroad sin igual.</p>
+        </div>
+        <div class="modelo-card reveal delay-1">
+          <div class="modelo-card__number">02</div>
+          <h3 class="modelo-card__name">Land Cruiser</h3>
+          <p class="modelo-card__desc">Lujo y conquista. Para los terrenos más exigentes del planeta.</p>
+        </div>
+        <div class="modelo-card reveal delay-2">
+          <div class="modelo-card__number">03</div>
+          <h3 class="modelo-card__name">FJ Cruiser</h3>
+          <p class="modelo-card__desc">Icónico y capaz. Un clásico moderno que enamoró a toda una generación.</p>
+        </div>
+        <div class="modelo-card reveal delay-3">
+          <div class="modelo-card__number">04</div>
+          <h3 class="modelo-card__name">Tacoma / Hilux</h3>
+          <p class="modelo-card__desc">Trabajo duro y aventura. Las pick-up más confiables del mercado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ PASEOS ═══════════════════════════════════════ -->
+  <section class="paseos" id="paseos">
+    <div class="container">
+      <div class="paseos__header reveal">
+        <p class="eyebrow">Calendario</p>
+        <h2 class="section-heading">Próximos Paseos &amp; Actividades</h2>
+        <p class="paseos__subtitle">Únete a nuestras próximas aventuras por Costa Rica</p>
+      </div>
+
+      <div class="paseos__grid">
+
+        <article class="paseo-card reveal">
+          <div class="paseo-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=80&fit=crop" alt="Volcán Turrialba" loading="lazy">
+            <span class="paseo-card__badge paseo-card__badge--next">Próximo</span>
+          </div>
+          <div class="paseo-card__body">
+            <div class="paseo-card__date-box">
+              <span class="paseo-card__month">NOV</span>
+              <span class="paseo-card__day">15</span>
+            </div>
+            <div class="paseo-card__info">
+              <h3 class="paseo-card__title">Volcán Turrialba</h3>
+              <p class="paseo-card__desc">Ascenso por los caminos del Turrialba. Terreno mixto de barro y roca, ideal para el 4Runner.</p>
+              <div class="paseo-card__meta">
+                <span class="paseo-card__meta-item">📍 Cartago → Turrialba</span>
+                <span class="paseo-card__meta-item paseo-card__diff paseo-card__diff--med">⚙️ Dificultad Media</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="paseo-card reveal delay-1">
+          <div class="paseo-card__img-wrap">
+            <img src="https://pub-cdc692527515432c93070f8e3ad6c005.r2.dev/pack-lightly.com/2026/09/cerro-de-la-muerte.jpg" alt="Cerro de la Muerte" loading="lazy">
+            <span class="paseo-card__badge paseo-card__badge--plan">Planificando</span>
+          </div>
+          <div class="paseo-card__body">
+            <div class="paseo-card__date-box">
+              <span class="paseo-card__month">DIC</span>
+              <span class="paseo-card__day">06</span>
+            </div>
+            <div class="paseo-card__info">
+              <h3 class="paseo-card__title">Cerro de la Muerte</h3>
+              <p class="paseo-card__desc">Aventura por caminos de altura con impresionantes vistas del Valle Central y neblina espesa.</p>
+              <div class="paseo-card__meta">
+                <span class="paseo-card__meta-item">📍 División → San Gerardo</span>
+                <span class="paseo-card__meta-item paseo-card__diff paseo-card__diff--high">🔥 Dificultad Alta</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="paseo-card reveal delay-2">
+          <div class="paseo-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1504457047772-27faf1c00561?w=700&q=80&fit=crop" alt="Playa Costa Rica" loading="lazy">
+            <span class="paseo-card__badge paseo-card__badge--plan">Planificando</span>
+          </div>
+          <div class="paseo-card__body">
+            <div class="paseo-card__date-box">
+              <span class="paseo-card__month">ENE</span>
+              <span class="paseo-card__day">25</span>
+            </div>
+            <div class="paseo-card__info">
+              <h3 class="paseo-card__title">Caribe Costarricense</h3>
+              <p class="paseo-card__desc">Caminos costeros y playa del Caribe. El cierre perfecto de año con toda la familia.</p>
+              <div class="paseo-card__meta">
+                <span class="paseo-card__meta-item">📍 Limón – Manzanillo</span>
+                <span class="paseo-card__meta-item paseo-card__diff paseo-card__diff--low">✅ Dificultad Baja</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="paseos__footer reveal">
+        <p class="paseos__note">Los detalles finales se anuncian por Instagram y WhatsApp del grupo.</p>
+        <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener" class="btn btn--primary">
+          Ver todos en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ GALERÍA ══════════════════════════════════════ -->
+  <section class="galeria" id="galeria">
+    <div class="galeria__header container reveal">
+      <p class="eyebrow eyebrow--light">Galería</p>
+      <h2 class="section-heading section-heading--light">Momentos del Club</h2>
+    </div>
+
+    <div class="galeria__grid">
+      <div class="galeria__item reveal" data-src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=1200&q=90">
+        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=700&q=80&fit=crop" alt="Offroad 4x4 trail" loading="lazy">
+        <div class="galeria__overlay"><span>+</span></div>
+      </div>
+      <div class="galeria__item galeria__item--tall reveal delay-1" data-src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?w=1200&q=90">
+        <img src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?w=700&q=80&fit=crop" alt="Paisaje tropical" loading="lazy">
+        <div class="galeria__overlay"><span>+</span></div>
+      </div>
+      <div class="galeria__item reveal delay-2" data-src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=90">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&q=80&fit=crop" alt="Paisaje aéreo Costa Rica" loading="lazy">
+        <div class="galeria__overlay"><span>+</span></div>
+      </div>
+      <div class="galeria__item galeria__item--wide reveal" data-src="https://ecoterracostarica.com/wp-content/uploads/2025/11/Sceince-behind-arenal-voolcano.jpg">
+        <img src="https://imgcap.capturetheatlas.com/wp-content/uploads/2024/08/Volcan-Turrialba-uno-de-los-volcanes-activos-en-Costa-Rica.jpg" alt="Volcán Costa Rica" loading="lazy">
+        <div class="galeria__overlay"><span>+</span></div>
+      </div>
+      <div class="galeria__item reveal delay-1" data-src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=1200&q=90">
+        <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=700&q=80&fit=crop" alt="Camino en el bosque" loading="lazy">
+        <div class="galeria__overlay"><span>+</span></div>
+      </div>
+      <div class="galeria__item reveal delay-2" data-src="https://images.unsplash.com/photo-1543051932-6ef9fecfbc80?w=1200&q=90">
+        <img src="https://images.unsplash.com/photo-1543051932-6ef9fecfbc80?w=700&q=80&fit=crop" alt="Aventura offroad" loading="lazy">
+        <div class="galeria__overlay"><span>+</span></div>
+      </div>
+    </div>
+
+    <div class="galeria__cta container reveal">
+      <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener" class="btn btn--outline-white">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        Ver más fotos en Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- ════════════════════════════════ ÚNETE ════════════════════════════════════════ -->
+  <section class="unete" id="unete">
+    <div class="container">
+      <div class="unete__grid">
+
+        <div class="unete__info reveal">
+          <p class="eyebrow">Únete</p>
+          <h2 class="section-heading">¿Tenés un Toyota 4×4?</h2>
+          <p class="unete__text">
+            Si sos un apasionado de los Toyota 4×4 y querés ser parte de la familia
+            4Runner Cartago, escribinos. Juntos hacemos los mejores paseos de Costa Rica.
+          </p>
+          <ul class="benefits-list">
+            <li class="benefits-list__item">
+              <span class="benefits-list__icon">✅</span>
+              Paseos organizados varias veces al año
+            </li>
+            <li class="benefits-list__item">
+              <span class="benefits-list__icon">✅</span>
+              Comunidad activa de entusiastas Toyota
+            </li>
+            <li class="benefits-list__item">
+              <span class="benefits-list__icon">✅</span>
+              Tips mecánicos y de preparación 4×4
+            </li>
+            <li class="benefits-list__item">
+              <span class="benefits-list__icon">✅</span>
+              Grupo de WhatsApp exclusivo
+            </li>
+            <li class="benefits-list__item">
+              <span class="benefits-list__icon">✅</span>
+              Actividades y eventos especiales
+            </li>
+            <li class="benefits-list__item">
+              <span class="benefits-list__icon">✅</span>
+              Descuentos con proveedores del club
+            </li>
+          </ul>
+          <div class="unete__social-note">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            También podés escribirnos directamente por Instagram: <strong>@4runnercartago</strong>
+          </div>
+        </div>
+
+        <div class="unete__form-wrap reveal delay-1">
+          <form class="join-form" id="joinForm" novalidate>
+            <h3 class="join-form__title">Solicitar Membresía</h3>
+            <p class="join-form__subtitle">Te contactamos por WhatsApp en 48 horas</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre" class="form-label">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre completo" required>
+              </div>
+              <div class="form-group">
+                <label for="whatsapp" class="form-label">WhatsApp *</label>
+                <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="+506 8888-8888" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu@correo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="vehiculo" class="form-label">Tu vehículo Toyota *</label>
+              <select id="vehiculo" name="vehiculo" class="form-input form-select" required>
+                <option value="">— Seleccioná tu vehículo —</option>
+                <option value="4runner">Toyota 4Runner</option>
+                <option value="land-cruiser">Toyota Land Cruiser</option>
+                <option value="fj-cruiser">Toyota FJ Cruiser</option>
+                <option value="tacoma">Toyota Tacoma</option>
+                <option value="hilux">Toyota Hilux</option>
+                <option value="prado">Toyota Prado</option>
+                <option value="otro">Otro Toyota 4×4</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="anio" class="form-label">Año del vehículo</label>
+                <input type="number" id="anio" name="anio" class="form-input" placeholder="Ej: 2019" min="1980" max="2026">
+              </div>
+              <div class="form-group">
+                <label for="generacion" class="form-label">Generación</label>
+                <select id="generacion" name="generacion" class="form-input form-select">
+                  <option value="">Seleccioná</option>
+                  <option value="5gen">5ª Gen (2010–2024)</option>
+                  <option value="4gen">4ª Gen (2003–2009)</option>
+                  <option value="3gen">3ª Gen (1996–2002)</option>
+                  <option value="otro">Otra generación</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje" class="form-label">¿Por qué querés unirte?</label>
+              <textarea id="mensaje" name="mensaje" class="form-input form-textarea" rows="3" placeholder="Contanos un poco sobre vos y tu 4x4..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar por WhatsApp 📲
+            </button>
+            <p class="form-note">
+              Al enviar, se abrirá WhatsApp con tu solicitud pre-llenada. Sin compromiso.
+            </p>
+
+            <div class="form-success" id="formSuccess" style="display:none">
+              <div class="form-success__icon">🎉</div>
+              <h4>¡Solicitud enviada!</h4>
+              <p>Gracias, te contactamos pronto por WhatsApp. ¡Bienvenido a la familia 4Runner!</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ IG BAND ══════════════════════════════════════ -->
+  <section class="ig-band">
+    <div class="container">
+      <div class="ig-band__inner reveal">
+        <div class="ig-band__icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </div>
+        <div class="ig-band__text">
+          <h3>Síguenos en Instagram</h3>
+          <p>@4runnercartago — Las mejores aventuras, en tiempo real.</p>
+        </div>
+        <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener" class="btn btn--primary">
+          Seguir al Club
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ CONTACTO ═════════════════════════════════════ -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="contacto__header reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-heading">¿Preguntas? <br>Hablemos.</h2>
+      </div>
+      <div class="contacto__grid">
+
+        <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-card__icon contact-card__icon--ig">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </div>
+          <h3 class="contact-card__title">Instagram</h3>
+          <p class="contact-card__handle">@4runnercartago</p>
+          <span class="contact-card__cta">Ir al perfil →</span>
+        </a>
+
+        <a href="https://wa.me/50688888888?text=Hola%204Runner%20Cartago!%20Quiero%20informaci%C3%B3n%20sobre%20el%20club." target="_blank" rel="noopener" class="contact-card reveal delay-1">
+          <div class="contact-card__icon contact-card__icon--wa">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <h3 class="contact-card__title">WhatsApp</h3>
+          <p class="contact-card__handle">Escríbenos directo</p>
+          <span class="contact-card__cta">Enviar mensaje →</span>
+        </a>
+
+        <div class="contact-card reveal delay-2">
+          <div class="contact-card__icon contact-card__icon--loc">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3 class="contact-card__title">Ubicación</h3>
+          <p class="contact-card__handle">Cartago, Costa Rica 🇨🇷</p>
+          <span class="contact-card__cta">Provincia de Cartago</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="assets/Logo-4RunnerCoco.png" alt="4Runner Cartago" class="footer__logo">
+          <p class="footer__tagline">Pasión Toyota.<br>Aventura pura. 🇨🇷</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Navegación</h4>
+          <ul class="footer__col-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#paseos">Paseos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#unete">Únete al club</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Nuestros Vehículos</h4>
+          <ul class="footer__col-links">
+            <li>Toyota 4Runner</li>
+            <li>Toyota Land Cruiser</li>
+            <li>Toyota FJ Cruiser</li>
+            <li>Toyota Tacoma</li>
+            <li>Toyota Hilux</li>
+            <li>Toyota Prado</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Síguenos</h4>
+          <p class="footer__ig-link">
+            <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener">
+              @4runnercartago
+            </a>
+          </p>
+          <p class="footer__ig-desc">Seguinos para ver los mejores momentos del club, tips de preparación y anuncios de próximos paseos.</p>
+          <a href="https://www.instagram.com/4runnercartago/" target="_blank" rel="noopener" class="btn btn--ig btn--sm">Ver Instagram →</a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <!-- Toyota Oval SVG -->
+        <svg class="footer__oval" width="28" height="18" viewBox="0 0 100 60" fill="none">
+          <ellipse cx="50" cy="30" rx="48" ry="28" stroke="#e10a1d" stroke-width="5"/>
+          <ellipse cx="50" cy="30" rx="30" ry="18" stroke="#e10a1d" stroke-width="5"/>
+          <ellipse cx="50" cy="30" rx="14" ry="28" stroke="#e10a1d" stroke-width="5"/>
+          <line x1="2" y1="30" x2="98" y2="30" stroke="#e10a1d" stroke-width="5"/>
+        </svg>
+        <p class="footer__copy">© 2026 4Runner Cartago — Cartago, Costa Rica 🇨🇷</p>
+        <p class="footer__disclaimer">Fan club independiente. No afiliado oficialmente con Toyota Motor Corporation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Volver arriba">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
